@@ -1,0 +1,8 @@
+const hero = document.querySelector('.hero');
+
+hero.addEventListener('mousemove', (e) => {
+  const x = (window.innerWidth / 2 - e.pageX) / 40;
+  const y = (window.innerHeight / 2 - e.pageY) / 40;
+
+  hero.style.transform = `translate(${x}px, ${y}px)`;
+});
